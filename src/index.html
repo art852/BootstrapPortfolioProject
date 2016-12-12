@@ -8,39 +8,90 @@
   <title>HTML Portfolio</title>
 </head>
 <body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button tpye="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Kyle Sox</a>
+    </div><!-- navbar-header -->
 
-  <!--
-    Previous project placeholder begins
-  -->
-  <div class="header">
-    <h1>Morgan McCircuit</h1>
-    <h2>I write code</h2>
-  </div>
-
-  <div class="tagline">
-    <h3>Who I am</h3>
-    <p>Hi, my name is Morgan and I love to write code that is efficient.</p>
-  </div>
-
-
-  <div class="skills">
-    <h3>What I do</h3>
-    <p>Here are some of the languages I use on a day-to-day.</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <h3>Get in touch</h3>
-    <p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
-  </div>
-  <!--
-    Previous project placeholder ends
-    (unused pieces will be deleted at the last task)
-  -->
+    <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div><!-- collapse navbar-collapse -->
+  </div><!-- container -->
+</nav>
+  <div id="portfolio-carousel" class=:"carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+      <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Who I Am</h1>
+              <p>Some example text describing the wonderful headline above.</p>
+          </div><!-- carousel-caption -->
+        </div><!-- container -->
+      </div><!-- item active -->
+      <div class="item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>What I Do</h1>
+              <p>Some example text describing the wonderful headline above.</p>
+          </div><!-- carousel-caption -->
+        </div><!-- container -->
+      </div><!-- item active -->
+      <div class="item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Why You Need to Hire Me</h1>
+              <p>Some example text describing the wonderful headline above.</p>
+          </div><!-- carousel-caption -->
+        </div><!-- container -->
+      </div><!-- item active -->
+    </div><!-- carousel-inner -->
+    <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div><!-- portfolio-carousel -->
+<div class="marketing">
+  <div class="container">
+  <div class="row">
+<div class="col-md-4"><span class="glyphicon glyphicon-music"></span>
+<h2>I Enjoy the French Horn</h2>
+<p>The French Horn is an often overlook instrument because of its silly appearance. But mind you, it is pure joy to play.</p></div>
+  </div><!-- row -->
+  <div class="col-md-4"><span class="glyphicon glyphicon-dog"></span>
+  <h2>I Like Du-hawgs</h2>
+  <p>Dogs. Play, crap, sleep, repeat. Ah the life of the mighty majestic beast that is the dog.</p></div>
+    </div><!-- row -->
+    <div class="col-md-4"><span class="glyphicon glyphicon-music"></span>
+    <h2>Clean Code</h2>
+    <p>Clean code makes the world a much finer place to live in. And hula skirts of course.</p></div>
+      </div><!-- row -->
+</div><!-- container -->
+</div><!-- marketing -->
+<footer>
+<div class="container">
+  <h3>Get in touch immediatly!</h3>
+  <p>Semaphore is the prefered method of contact. </p>
+</div><!-- container -->
+</footer>
 
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
